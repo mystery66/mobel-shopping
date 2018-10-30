@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$route)
+    console.log(this.$route.name)
     let Rname = this.$route.name;
     switch (Rname) {
       case '首页':
@@ -56,6 +56,28 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
+.mint-tab-item-label:hover 
+  color #333
+
+.tabbar
+  .mint-tabbar
+    background #fff
+    -webkit-box-shadow 0 0 0.5rem 0  0 hsla(0, 6%, 50%, .13)
+    box-shadow 0 0 0.5rem 0  0 hsla(0, 6%, 50%, .13)
+    .mint-tab-item 
+      .iconfont
+        font-size 1rem     
+      .mint-tab-item-label
+        font-size 1.5rem  
+    .is-selected 
+      color #fd5500
+      background #fff
+     
+       
+           
+
+ 
+
 
 </style>
