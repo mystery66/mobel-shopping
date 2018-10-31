@@ -46,6 +46,10 @@ export default {
 <style lang="stylus" scoped>
 @import '../../style/mixin.styl'
 .header
+  position fixed
+  top 0
+  left 0
+  z-index 99
   width 100%
   height 2.8rem
   background: -webkit-linear-gradient(left, #ff8b00 , #fd5500)
