@@ -1,18 +1,4 @@
 <template>
-  <!-- <mt-header fixed >
-    <router-link :to="{name: ''}" slot="left">
-      <i class="icon iconfont icon-scan"></i>
-      <p>扫一扫</p>
-    </router-link>
-      <router-link :to="{name: '搜索页'}">
-        <input type="text">
-      </router-link>
-    <router-link :to="{name: ''}" slot="right">
-      <i class="icon iconfont icon-qrcode"></i>
-      <p>会员码</p>
-    </router-link> -->
- 
-<!-- </mt-header> -->
   <div class="header">
     <div class="header-item left">
       <router-link :to="{name: ''}" >
@@ -49,7 +35,7 @@ export default {
   position fixed
   top 0
   left 0
-  z-index 99
+  z-index 1
   width 100%
   height 2.8rem
   background: -webkit-linear-gradient(left, #ff8b00 , #fd5500)
