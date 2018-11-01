@@ -23,16 +23,16 @@ export default {
     background linear-gradient(left, #ff8b00, #fd5500)
     // text-align center
     // position relative
-    height 2.8rem
+    height 2.5rem
     display flex
     display -webkit-flex
     align-items center
     .icon-go
-      width 18%
+      width 15%
       text-align center
 
     .iconfont
-      font-size 1.5rem
+      font-size 1.2rem
       
 
       
