@@ -4,7 +4,7 @@ import Router from 'vue-router'
 
 const Index = resolve => require(['@/pages/Index'], resolve)
 const Category = resolve => require(['@/pages/Category'], resolve)
-const CategoryMain = resolve => require(['@/components/category/main'], resolve)
+const CategoryMain = resolve => require(['@/components/category/Main'], resolve)
 const Car = resolve => require(['@/pages/GoodsCar'],resolve)
 const User = resolve => require(['@/pages/User'], resolve)
 const Detail = resolve => require(['@/pages/Detail'], resolve)
@@ -15,6 +15,7 @@ const Login = resolve => require(['@/pages/login'], resolve)          //lazyload
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
   routes: [
     {
       path: '/',
