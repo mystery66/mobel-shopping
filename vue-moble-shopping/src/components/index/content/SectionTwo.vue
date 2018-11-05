@@ -7,7 +7,7 @@
     <div class="sectiontwo-list">
       <ul>
         <li v-for="(list,index) in list" :key="index">
-          <router-link :to="{name:'详情页'}">
+          <router-link :to="{name:'详情页',query:{id:list.id}}">
             <img v-lazy="list.img" >
              <h2 class="section2-list-title ac">
               {{list.name}}
@@ -22,9 +22,11 @@
         </li>
       </ul>
     </div>
-    <router-link class="section2-banner" :to="{name:'详情页'}">
-      <img v-lazy="img">
-    </router-link>
+    <div class="section2-img">
+      <router-link class="section2-banner" :to="{name:'详情页',query:{id:img.id}}">
+        <img v-lazy="img.path">
+      </router-link>  
+    </div>
   </div>
 </template>
 
@@ -38,7 +40,8 @@ export default {
 .sectiontwo
   background #fff
   margin-top 0.5rem 
-  margin-bottom 1rem
+  margin-bottom 0.5rem
+  width 100%
   .recommend
     padding 0.6rem
   .iconfont
@@ -79,11 +82,12 @@ export default {
           margin-top 0.25rem
           font-size 0.8rem 
           color #ff4d00
+.section2-img 
+  margin 0 0.6rem
+  padding-bottom 0.8rem       
   .section2-banner
-    width 100%
-    
-
     img 
       height 4.5rem
-      width 100%        
+      width 99% 
+      border-radius 0.5rem      
 </style>

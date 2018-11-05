@@ -3,7 +3,7 @@
     <div class="sectionone-tilte"><slot>Title</slot></div>
     <ul class="sectionone-list" >
       <li v-for="(item,index) in recommend" :key="index">
-        <router-link :to="{name:'详情页'}">
+        <router-link :to="{name:'详情页',query:{ id:item.id }}">
         <div class="sectionone-goods">
             <img  class="cover" v-lazy="item.img">
             <span class="description">{{item.description}}</span>
@@ -12,18 +12,12 @@
         </router-link>
       </li>
     </ul>
-    <!-- <router-link :to="{name:'详情页'}" class="sectionnoe-banner">
-      <img  alt="111">
-    </router-link> -->
   </div>
 </template>
 
 <script>
 export default {
   props: ['recommend']
-   
-      
-  
 }
 </script>
 
@@ -33,9 +27,7 @@ export default {
   margin-top 0.5rem
   border-radius 1rem
   z-index 9
-  // box-shadow: 0.4rem 0.4rem 0.2rem #888888;
-  
- .sectionone-tilte
+  .sectionone-tilte
     text-align center
     font-size 1rem
     font-weight bold

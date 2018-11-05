@@ -70,6 +70,4 @@ export default {
         font-size 1rem
         letter-spacing 1px
         font-weight 500
-        
-        
 </style>

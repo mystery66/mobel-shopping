@@ -1,19 +1,17 @@
 <template>
   <mt-swipe :auto="4000">
     <mt-swipe-item v-for="(item,index) in swiperImg" :key="index">
-      <router-link :to="{name: '详情页'}">
+      <router-link :to="{name:'详情页',query:{id: item.id}}" >
         <img :src="item.img" alt="">
       </router-link>
+      
     </mt-swipe-item>
-   
   </mt-swipe>
 </template>
 
 <script>
 export default {
-props: ['swiperImg']
-  
-  
+props: ['swiperImg'],
 }
 </script>
 
@@ -25,6 +23,4 @@ props: ['swiperImg']
   img 
     width 100%
     height 100%
-    
-
 </style>
