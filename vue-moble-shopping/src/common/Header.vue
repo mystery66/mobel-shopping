@@ -33,6 +33,7 @@ export default {
 
     .iconfont
       font-size 1.2rem
+      color #fff
       
 
       
