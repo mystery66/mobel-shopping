@@ -20,7 +20,7 @@ computed: {
     let tabIndex = this.$store.state.tabIndex
     return this.categoryList[tabIndex]
   }
-}
+  }
 }
 </script>
 
@@ -29,7 +29,6 @@ computed: {
   display inline-block
   width 84%
   background #f2f2f2
-
   h2
     font-size 1.2rem
     padding 0.5rem 1rem
@@ -40,7 +39,6 @@ computed: {
     display flex
     flex-wrap wrap
     li
-      
       background #f2f2f2
       width 33%
       text-align center
@@ -51,8 +49,4 @@ computed: {
         display block
         margin 10% 0 
         font-size 0.8rem
-
-      
-  
-
 </style>

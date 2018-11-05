@@ -15,14 +15,12 @@ export default {
   props:['items'],
   computed: {
     tabIndex() {
-
       return this.$store.state.tabIndex
     }
   },
   methods: {
     changeTabIndex(index) {
       this.$store.commit('CHANGE_TABINDEX',index)
-      
     }
   }
 }
@@ -38,7 +36,6 @@ export default {
   ul
     height 100%
     width 100% 
-    
     li
       text-align center
       color #303030
@@ -59,5 +56,4 @@ export default {
           vertical-align middle
           transform translateY(-50%)
           background-color #ff5500
-
 </style>
