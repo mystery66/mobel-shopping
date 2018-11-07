@@ -4,7 +4,7 @@
       v-if="$route.matched[0].path == '/category'">
       <i class="icon iconfont icon-back"></i>
     </router-link>
-    <div class="icon-go" @cilck="$router.go(-1)" v-else>
+    <div class="icon-go" @click="$router.go(-1)" v-else>
       <i class="icon iconfont icon-back"></i>
     </div>
     <slot></slot>
@@ -30,7 +30,6 @@ export default {
     .icon-go
       width 15%
       text-align center
-
     .iconfont
       font-size 1.2rem
       color #fff

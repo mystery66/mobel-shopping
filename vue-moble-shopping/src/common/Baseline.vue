@@ -9,8 +9,8 @@
 
 <style lang="stylus" scoped>
   div 
-    background #fff
-    padding 2rem 0 5rem 0
+    background #f2f2f2
+    padding 1rem 0 3.2rem 0
     text-align center
     letter-spacing .2vw
     color rgb(158, 158, 158)
