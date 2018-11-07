@@ -41,7 +41,7 @@ export default {
       this.detailList = list.filter(item => item.id === id)
       this.swiperImg = this.detailList[0].img
       this.info = this.detailList[0].info
-      this.name = this.detailList[0].name
+      this.name = this.detailList[0].info.title
       this.contentImg = this.info.contentImg
       this.cover = this.swiperImg[0]
 
