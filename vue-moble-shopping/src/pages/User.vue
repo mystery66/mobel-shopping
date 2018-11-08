@@ -71,18 +71,16 @@ computed: {
     return this.$store.state.username
   }
 },
-beforeCreate() {
+
+mounted() {
   this.$store.commit('USER_NAME')
 }
-// mounted() {
-//   this.$store.commit('USER_NAME')
-// }
 }
 </script>
 
 <style lang="stylus" scoped>
   .car 
-    width 100%
+    width 100% 
     background-color #F8FCFF
     .header 
       width 100%
