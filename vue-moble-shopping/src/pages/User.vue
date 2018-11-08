@@ -29,18 +29,20 @@
               </router-link>
             </section>
           <section class="my-vip">
-            <router-link class="my-section ho" :to="{ name: ''}" >
+            <router-link class="my-vip-header ho" :to="{ name: ''}" >
               <div class="my-vip-top-div">
                 <i class="icon iconfont icon-huiyuan"></i>
                 <span>会员福利</span>
                  <i class="icon iconfont icon-right"></i>
               </div>
             </router-link>
-            <router-link class="my-vip-bottom ho" :to="{ name: ''}">
+          </section>
+          <section class="my-vip">
+            <router-link :to="{ name: ''}" class="my-settle-bottom">
               <div class="my-vip-top-div">
-                 <i class="icon iconfont icon-youhui-copy"></i>
-                 <span>我的优惠</span>
-                 <i class="icon iconfont icon-right"></i>
+                <i class="icon iconfont icon-youhui-copy"></i>
+                <span>我的优惠</span>
+                <i class="icon iconfont icon-right"></i>
               </div>
             </router-link>
           </section>
@@ -69,16 +71,18 @@ computed: {
     return this.$store.state.username
   }
 },
-mounted() {
+beforeCreate() {
   this.$store.commit('USER_NAME')
 }
+// mounted() {
+//   this.$store.commit('USER_NAME')
+// }
 }
 </script>
 
 <style lang="stylus" scoped>
   .car 
     width 100%
-   
     background-color #F8FCFF
     .header 
       width 100%
@@ -149,6 +153,7 @@ mounted() {
       position relative
       padding-bottom 0.6rem
       border-bottom 1px solid #f8f8f8
+      
       i 
         font-size 1.5rem 
       .icon-huiyuan
